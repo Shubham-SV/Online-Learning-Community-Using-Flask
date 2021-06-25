@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <!-- Page Header -->
+      <header class="masthead" style="background-image: url('{{ url_for('static', filename = 'assets/img/signup.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>SUBSCRIBE</h1>
+              <hr>
+              <span class="subheading">Subscribe today and join one of the fastest growing learning platform </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h5> Please fill the information for subscribe!</h5>
+          <hr></hr>
+          <form name="sentMessage" id="contactForm" action = "/signup" method="post" novalidate>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Name" id="name" name='name' required data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Passward</label>
+                <input type="password" class="form-control" placeholder="Passward" name="passward" id="passward" required data-validation-required-message="Please enter passward.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+             <div class="control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>College Name</label>
+                <input type="text" class="form-control" placeholder="College Name" name="college" id="college" required data-validation-required-message="Please enter your college name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" id="sendMessageButton">SUBSCRIBE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+   
+<!--Created using ToHtml.com on 2021-05-18 09:31:01 UTC -->
+   {% endblock %}
+

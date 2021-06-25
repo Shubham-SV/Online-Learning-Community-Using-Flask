@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{url_for('static',filename='assets/img/adminlogin.jpg')}}  ')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h1>CONTRIBUTIONS</h1>
+                            <span class="subheading">View all contributions here</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class = "container">
+                          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp           <td><a href = "/dash"><button class="btn btn-primary">DASHBOARD</button></a></td> 
+
+</div>
+        <div class="container">
+            <div class="row">
+
+                 <div class="col-lg-8 col-md-10 mx-auto">
+      </form>
+
+          <hr></hr><hr>
+          <div class="row">
+        </div>
+        <h1>VIEW CONTRIBUTIONS</h1>
+        <hr></hr>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>SNo</th>
+        <th>Contributer</th>
+        <th>Title</th>
+        <th>Date</th>
+         <th>VIEW</th>
+      </tr>
+
+    </thead>
+    <tbody>
+
+
+        {% for post in posts %}
+      <tr>
+        <td>{{post.sno}}</td>
+        <td>{{post.name}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.date}}</td>
+        <td><a href="/contri/{{post.sno}}"><button class="btn btn-primary">VIEW</button></a></td>
+     </a></td>
+
+    </tr>
+    {% endfor %}
+    <td><a href = "/logout"><button class="btn btn-primary">LOGOUT</button></td>
+
+    </tbody>
+  </table>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        {% endblock %}
+        

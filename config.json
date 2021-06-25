@@ -1,0 +1,20 @@
+{
+  "params":
+  {
+   "local_server":"True",
+    "local_uri": "mysql+pymysql://root:@localhost/onlinepost",
+    "prod_uri": "mysql+pymysql://root:@localhost/onlinepost",
+    "fb_url": "https://m.facebook.com/shubham.vyavhare.169",
+    "insta_url": "https://www.instagram.com/_shubhamm_1/",
+    "linked_url": "https://www.linkedin.com/in/shubham-vyavhare-180472206/",
+    "blog_name": "LEARNING HUB",
+    "tagline" : "One of the best and strong programming community in the world",
+    "gmail_user":"shubhamvyawahare118@gmail.com",
+    "gmail_passward":"3042003shubham",
+    "about_text": "Hello , My name is shubham",
+    "no_of_posts": 7,
+    "admin_user": "shubham@gmail.com",
+    "admin_passward": "shubham2003",
+    "upload_location": "C:\\Users\\shubh\\PycharmProjects\\CollegeProject\\Static\\assets\\img"
+  }
+}

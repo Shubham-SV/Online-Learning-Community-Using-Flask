@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <!-- Page Header -->
+      <header class="masthead" style="background-image: url('{{ url_for('static', filename = 'assets/img/takes.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>CONTRIBUTE</h1>
+              <hr>
+              <span class="subheading">Share your knowladge with many peoples around the world and showcase yourself on home page</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h5>Please don't send irsepective and out of topic posts here .</h5>
+          <hr></hr>
+          <form name="sentMessage" id="contactForm" action = "/contribute" method="post" novalidate>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Please enter your Name" id="name" name='name' required data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+
+             <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Email</label>
+                <input type="text" class="form-control" placeholder="Please enter your Email" id="email" name='email' required data-validation-required-message="Please enter your email.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Post Title</label>
+                <input type="email" class="form-control" placeholder="Entre title of your post" id="title" name="title" required data-validation-required-message="Enter title.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Post Subtitle</label>
+                <input type="tagline" class="form-control" placeholder="Entre subtitle of your post" id="tagline" name="tagline" required data-validation-required-message="Enter subtitle.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Post Content</label>
+                <textarea rows="15" class="form-control" placeholder="Enter content of your post" name = "content" id="content" required data-validation-required-message="Enter content"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" id="sendMessageButton">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+   
+<!--Created using ToHtml.com on 2021-05-18 09:31:01 UTC -->
+   {% endblock %}
