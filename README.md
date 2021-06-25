@@ -23,10 +23,10 @@ APPLICATIONS :
 Section 1 : 
 
 Article Writing : 
-1. Online articles on different concepts 
+1. Online articles on different concepts.
 2. You can contribute your article and will receive email after successful contribution.
 3. You can edit , delete your post any time .
-4. You can also add images with your articles
+4. You can also add images with your articles.
 6. At admin panel you can view total contributions , and articles .
 
 <br/><br/>
@@ -52,7 +52,7 @@ Section 4 :
 
 Notifications : 
 1. You can subscribe if to get notification via email if new article is added.
-2. There are feedback form after submitting it you will get a email for thanks .
+2. There are feedback form after submitting it you will get a email for thanks.
 
 
 
@@ -68,7 +68,7 @@ Technologies Used :
 This is how project is solving the problems of students like : 
 <br/>
 1. Read articles of their interest online anytime.
-2. Contribute article to discuss their knowedge
+2. Contribute article to discuss their knowedge.
 3. Discuss their questions category wise anytime with anyone.
 4. If do not have compiler , can compile and run code in more than 10 languages.
 5. Email system for alert.
